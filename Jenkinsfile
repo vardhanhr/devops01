@@ -8,6 +8,7 @@ pipeline {
     
       steps {
         echo 'building the application....'
+        echo 'today is saturday'
       }
     }
      stage("Test") {
@@ -20,6 +21,12 @@ pipeline {
     
       steps {
         echo 'deploying the application....'
+      }
+    }
+    stage("Result") {
+    
+      steps {
+        echo 'Success...'
       }
     }
   }
